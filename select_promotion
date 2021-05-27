@@ -1,0 +1,13 @@
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'select_promotion',
+  ecommerce: {
+    items: [{
+      promotion_id: 'bfcm',                 // promotion ID
+      promotion_name: 'black_friday',       // name of the promo campaign
+      creative_name: '50_percent_off',      // main message of the banner
+      creative_slot: 'sidebar1',            // slot of the banner (there are multiple items in the same location, e.g. slider)
+      location_id: 'sidebar'                // location of the banner
+    }]
+  }
+});
