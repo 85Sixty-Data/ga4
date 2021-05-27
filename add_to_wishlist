@@ -1,0 +1,19 @@
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'add_to_wishlist',             // name of the event. In this case, it always must be add_to_wishlist
+  ecommerce: {                          
+    items: [{                           // an array with a product (or multiple products) that was added to a cart
+      item_name: 'Product 1',           // insert an actual product name
+      item_id: 'product1',              // insert an actual product ID
+      price: '11.99',                   // insert an actual product price. Number or a string. Don't include currency code
+      item_brand: 'brand A',            // insert an actual product price
+      item_category: 'Apparel',         // insert an actual product top-level category
+      item_category2: 'T-shirt',        // if it is possible to drill down the categories (e.g. Apparel, then T-shirt, then Men), use item_category2, item_category3, etc. Can use from item_category up to item_category5
+      item_variant: 'Blue',             // insert an actual product variant
+      item_list_name: 'Search results', // if a product is added to wishlist directly from product list, add the list name here
+      item_list_id: 'search_results',   // if a product is added to wishlist directly from product list, add the list id here
+      index: 1,                         // if a product is added to wishlist directly from product list, add the position in the list here
+      quantity: '1'                     // product quantity of how many products were added to a wishlist
+    }]
+  }
+});
