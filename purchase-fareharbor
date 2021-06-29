@@ -1,0 +1,32 @@
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'purchase',            // name of the event. In this case, it always must be purchase
+  ecommerce: {
+    currency: 'USD',
+    value: 74.00,                       // order total (price of all products + shipping)
+    tax: 9.44,                          // tax
+    shipping: 0.00,                 // shipping costs
+    affiliation: 'FareHarbor',      // affiliation (e.g. affiliate id, name of the store, etc.)
+    transaction_id: '84584728',           // transaction id
+    coupon: 'ENDOFSUMMER',          // if coupon was applied to the order, include it here          
+    items: [{                           // an array with all products
+      item_name: 'Learn TO Surf',           // insert an actual product name
+      item_id: 'productid1',              // insert an actual product ID
+      price: 74.00,                 // insert an actual product price. Number or a string. Don't include currency code
+      item_brand: 'Waco Surf Pool',            // insert an actual product price
+      item_category: 'Surfing',         // insert an actual product top-level category
+      item_category2: 'Beginner',        // if it is possible to drill down the categories (e.g. Apparel, then T-shirt, then Men), use item_category2, item_category3, etc. Can use from item_category up to item_category5
+      item_variant: '08/20/2021|15:00-16:00',             // please enter the date of the booking reservation here. Eg: if the reservation is for August 20th, 2021 2pm-3pm , it would be 08/20/2021|15:00-16:00
+      quantity: '1',                    // product quantity
+      item_coupon: 'SUMMER20'           // if a coupon was applied not to the entire order but to one product, use item_coupon
+    },{
+      item_name: 'Product 2',
+      item_id: 'product2',
+      price: 12.99,
+      item_brand: 'Brand B',
+      item_category: 'Category B',
+      item_variant: 'Yellow',
+      quantity: '1'
+    }]
+  }
+});
