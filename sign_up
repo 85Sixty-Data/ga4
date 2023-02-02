@@ -2,6 +2,6 @@
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
  'event': 'signup_completed',
- 'method': 'google login'
+ 'method': 'email'
  });
 </script>
