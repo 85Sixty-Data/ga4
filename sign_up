@@ -1,7 +1,7 @@
 <script>
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
- 'event': 'signup_completed',
+ 'event': 'signup',
  'method': 'email'
  });
 </script>
