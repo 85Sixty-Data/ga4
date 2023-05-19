@@ -2,5 +2,7 @@
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
  'event': 'file_download',
+ file_name: 'name',
+	link_url: 'url'
  });
 </script>
