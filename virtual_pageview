@@ -2,7 +2,7 @@ window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   event: 'virtualPageview',               // name of the event. In this case, it always must be virtualPageview
   page_url: 'https://wwww.example.com/',  // the URI of the page, including query strings and fragment identifiers
-  page_title: 'Homepage',         			  // friendly name of the page
-  search_term: 'search query',		        // optional string, the user entered search query (required if not passed in the URI as a query string)
-  search_result_count: 3				          // optional integer, the number of search results returned
+  page_title: 'Homepage',                 // friendly name of the page
+  search_term: 'search query',            // optional string, the user entered search query (required if not passed in the URI as a query string)
+  search_result_count: 3                  // optional integer, the number of search results returned
 });
